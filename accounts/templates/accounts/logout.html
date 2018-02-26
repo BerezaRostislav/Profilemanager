@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Login</title>
+{% endblock %}
+
+{% block body %}
+  <!--<body class="text-center">-->
+    <!--<form class="form-signin">-->
+      <!--{% csrf_token %}-->
+      <!--<img class="mb-4" src="/static/accounts/img/logo.png" alt="" width="92" height="92">-->
+      <!--<h1 class="h3 mb-3 font-weight-normal">Пожалуйста авторизируйтесь</h1>-->
+      <!--<label for="id_username" class="sr-only">Username</label>-->
+      <!--<input type="text" name="username" id="id_username" maxlength="254" class="form-control" placeholder="User name" required autofocus>-->
+      <!--<label for="id_password" class="sr-only">Password</label>-->
+      <!--<input type="password" name="password" id="id_password" class="form-control" placeholder="Password" required>-->
+      <!--<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>-->
+    <!--</form>-->
+  <!--</body>-->
+
+
+        <!--<p><label for="id_username">Username:</label> <input type="text" name="username" id="id_username" maxlength="254" autofocus required /></p>-->
+        <!--<p><label for="id_password">Password:</label> <input type="password" name="password" id="id_password" required /></p>-->
+
+
+
+
+
+
+<div class="general-container">
+    <div class="container">
+        <h1> Добро пожаловать</h1>
+
+        <h2>Авторизируйтесь</h2>
+        <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Login</title>-->
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>-->
+        <!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">-->
+    <!--{% load static %}-->
+    <!--<link rel="stylesheet" href="{% static 'accounts/style.css' %}">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="general-container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-lg-8 col-lg-offset-2">-->
+        <!--<h1 class="title">Авторизируйтесь</h1>-->
+        <!--<button type="submit" class="btn btn-primary">отправить</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

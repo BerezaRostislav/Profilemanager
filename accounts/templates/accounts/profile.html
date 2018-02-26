@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Profile {{ user }}</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1> {{ user }} Profile</h1>
+    <p>Username : {{ user }}</p>
+    <p>First name : {{ user.first_name }}</p>
+    <p>Last name: {{ user.last_name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>User profile name: {{ user.userprofile.name }}</p>
+    <p>User profile last_name: {{ user.userprofile.last_name }}</p>
+    <p>User profile date_of_birth: {{ user.userprofile.date_of_birth }}</p>
+    <p>User profile biography: {{ user.userprofile.biography }}</p>
+    <p>User profile contacts: {{ user.userprofile.contacts }}</p>
+    <p>User profile gender: {{ user.userprofile.gender }}</p>
+
+</div>
+
+
+
+{% endblock %}
