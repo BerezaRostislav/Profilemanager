@@ -1,0 +1,6 @@
+Django==1.11
+django-bootstrap-datepicker==1.2.3
+django-bootstrap4==0.0.6
+pkg-resources==0.0.0
+pytz==2018.3
+
